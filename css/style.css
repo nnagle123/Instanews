@@ -69,6 +69,7 @@ table {
   contain: content;
   align-content: center;
   height: 50%;
+  margin-left: 5%;
 }
 
 h1 {
@@ -94,16 +95,15 @@ body {
 }
 
 .newPage {
-  height: 33vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50vh 50vh 50vh;
 }
 
 article {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  height: 400px;
 }
 
 p {
@@ -118,9 +118,10 @@ p {
 }
 
 .footer {
-  background-color: hotpink;
   color: #c2c2c2;
-  position: absolute;
+  margin: 10%;
+  margin-left: 3%;
+  margin-right: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */

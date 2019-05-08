@@ -74,6 +74,8 @@ table {
     contain: content;
     align-content: center;
     height: 50%;
+    margin-left: 5%;
+
 }
 
 // .img{
@@ -90,6 +92,7 @@ h1{
     font-family: "Open Sans";
 	font-weight: 300;
     font-style: normal;
+
 }
 
 p{
@@ -111,16 +114,16 @@ body{
 
 
 .newPage {
-    height:33vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50vh 50vh 50vh;
+    // grid-template-rows: 50vh 50vh 50vh;
 }
 
     article{
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        height: 400px;
     }
     p{ 
         order:2;
@@ -159,8 +162,9 @@ body{
 //   }
   
   .footer{
-    background-color: hotpink;
     color:#c2c2c2;
-    position: absolute;
+    margin: 10%;
+    margin-left: 3%;
+    margin-right: 5%;
 
 }
