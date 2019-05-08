@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  
+  $('select').niceSelect();
   
   $('select').on('change', function () {
     // let section = 'top stories'
