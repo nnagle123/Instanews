@@ -1,20 +1,15 @@
 /* CSS Fonts */
 @font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Light.woff2') format('woff2'),
-        url('OpenSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Open Sans";
+  src: url("OpenSans-Light.ttf") format("ttf"), url("OpenSans-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
 }
-
 /* CSS Reset */
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,75 +19,108 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* CSS Project for Project 3 "INSTANEWS" RED Academy by Nate Nagle*/
-
-
-
-
-
 /*===============================*/
 /* Project Starts Here  */
 /*===============================*/
-
-.logo{
-    display: flex;
-    contain: content;
+.logo {
+  display: flex;
+  contain: content;
+  align-content: center;
+  height: 50%;
 }
 
-.img{
-    display: flex;
-justify-content: center;
+h1 {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
 }
 
-
-body{
-	background-color: black;
-	font-family: "Open Sans";
-	font-weight: 300;
-    font-style: normal;
+p {
+  color: #ffffff;
+  font-size: 16px;
+  z-index: 2;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
 }
 
-p{
-	color: #ffffff;
-	font-size: 16px;
-
+body {
+  background-color: black;
 }
 
-footer{
-    color:#c2c2c2;
+.newPage {
+  height: 33vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50vh 50vh 50vh;
 }
+
+article {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+p {
+  order: 2;
+  background-color: darkslategray;
+  opacity: 0.8;
+}
+
+#box[i] {
+  width: 1fr;
+  height: 50vh;
+}
+
+.footer {
+  background-color: hotpink;
+  color: #c2c2c2;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */
