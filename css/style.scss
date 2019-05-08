@@ -126,15 +126,11 @@ body{
         height: 400px;
     }
     p{ 
-        height: 0%;
         order:2;
         background-color:darkslategray;
         opacity: 0.8;
     }
 
-    p:hover{
-        height:100%;
-    }
     
     #box[i]{   
         width: 1fr;
