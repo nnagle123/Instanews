@@ -2,27 +2,29 @@
 <html lang="en">
 
 <head>
-
-
   <title>InstaNews</title>
 
-
+  <meta charset="UTF-8">
   <meta name="description" content="Insta News" />
   <meta name="author" content="Nate Nagle" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./build/css/style.min.css">
   <link rel="stylesheet" href="assets/jquery-nice-select-1.1.0/css/nice-select.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class=logo>
-    <img src="images/logo.svg">
-  </div>
+  <section class="logo">
+    <img src="images/logo.svg"/>
+  </section>
 
   <h1> Choose a selection: </h1>
 
   <select id="section">
+  
     <option value="selections...">Selections...</option>
     <option value="arts">Arts</option>
     <option value="automobiles">Automobiles</option>
@@ -50,13 +52,13 @@
     <option value="world">World</option>
 
   </select>
-  <div class=newPage>
-  
+
+  <div class="newPage">
   </div>
 
-  <div class= 'footer'>
+  <footer>
     <i class="far fa-copyright"><span>Copyright 2019 INSTANEWS</span> </i>
-  </div>
+  </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.4.0.min.js"

@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $('select').niceSelect();
-  
+
   $('select').on('change', function () {
     // let section = 'top stories'
-    let option = $("select option:selected").val(); 
+    let option = $("select option:selected").val();
     $.ajax({
 
       method: 'GET',
@@ -12,15 +12,28 @@ $(document).ready(function () {
     })
 
       .done(function (data) {
+
+
+
+
         $('.newPage').html("");
-        for (i = 0; i< 12; i++){
-        let abstract = (data.results[i].abstract);
-        let imgURL = (data.results[i].multimedia[4].url)
-        $('.newPage').append(`<article id = "box${i}"><p>${abstract}</p></article>`);
-        $(`#box${i}`).css('background-image', `url("${imgURL}")`);
-        $(`#box${i}`).css('background-size', `cover`);    
-      
-      };
+        for (i = 0; i < 12; i++) {
+
+          let abstract = (data.results[i].abstract);
+          let imgURL = (data.results[i].multimedia[4].url)
+
+          $('.newPage').append(`<article class = "box${i}"><p>${abstract}</p></article>`);
+          $(`.box${i}`).css('background-image', `url("${imgURL}")`);
+          $(`.box${i}`).css('background-position', 'center center');
+          $(`.box${i}`).css('background-size', `cover`);
+        };
+        if ($(window).width() >= 1240) {
+          $(".logo img").css("width", "16vh");
+          $(".logo").css("margin-top", "19px");
+          $("h1").css("margin-top", "-75px");
+        }
+
+
 
       });
   })
